@@ -13,4 +13,6 @@ RUN pip install --upgrade pip && \
       pip install --upgrade virtualenv && \
       pip install --upgrade awscli
 
+ENV PATH="${PATH}:./node_modules/.bin"
+
 CMD bash
