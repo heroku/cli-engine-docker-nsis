@@ -3,6 +3,7 @@ MAINTAINER Jeff Dickey <jeff@heroku.com>
 
 RUN apt-get -y update && \
   apt-get install -y --no-install-recommends \
+  apt-utils \
   ocaml libelf-dev \
   python-pip python-dev build-essential \
   p7zip-full \
