@@ -5,6 +5,7 @@ RUN apt-get -y update && \
   apt-get install -y --no-install-recommends \
   apt-utils \
   ocaml libelf-dev \
+  ruby \
   python-pip python-dev build-essential \
   p7zip-full \
   && apt-get clean && \
@@ -12,7 +13,8 @@ RUN apt-get -y update && \
 
 RUN pip install --upgrade pip && \
       pip install --upgrade virtualenv && \
-      pip install --upgrade awscli
+      pip install --upgrade awscli && \
+      gem install devcenter
 
 RUN aws configure set preview.cloudfront true
 
