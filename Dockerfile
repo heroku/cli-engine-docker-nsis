@@ -68,6 +68,7 @@ RUN apt-get -y update && \
   locales \
   osslsigncode \
   nsis \
+  shellcheck \
   python-setuptools \
   wine \
   wine32 \
