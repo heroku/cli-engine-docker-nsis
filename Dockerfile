@@ -6,6 +6,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   curl \
   git \
   ca-certificates \
+  ssh \
   apt-transport-https \
   && rm -rf /var/lib/apt/lists/*
 
