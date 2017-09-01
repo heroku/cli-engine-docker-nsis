@@ -7,7 +7,11 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   git \
   ca-certificates \
   ssh \
+  osslsigncode \
   apt-transport-https \
+  nsis \
+  p7zip-full \
+  xz-utils \
   && rm -rf /var/lib/apt/lists/*
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
@@ -16,9 +20,6 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
   apt-get install -y --no-install-recommends \
   nodejs \
   yarn \
-  nsis \
-  p7zip-full \
-  xz-utils \
   && rm -rf /var/lib/apt/lists/*
 
 CMD bash
